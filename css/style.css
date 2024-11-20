@@ -1,0 +1,389 @@
+ 
+/* 文件名: d:\Yumeu\ACG_museum\css\style.css */
+
+/* 设置页面主体的背景样式 */
+body {
+    background: url(/img/bgimg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+/* 头部导航栏样式 */
+.header {
+    position: sticky;
+    /* 固定在视口顶部 */
+    top: 0;
+    /* 当滚动到顶部时，导航栏会固定 */
+    background-color: #E0D0BC;
+    padding: 15px;
+    margin: 0px;
+    border: 0px;
+    height: 98px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1000;
+    overflow: visible;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #8B4513;
+    opacity: 0.96;
+}
+
+/* 头部logo样式 */
+.headerlogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 128px;
+    height: 128px;
+}
+
+.headerlogo img {
+    border-radius: 8px;
+}
+
+/* 导航菜单列表样式 */
+.headul {
+    left: 150px;
+    top: 25px;
+    position: absolute;
+    display: inline-block;
+    list-style-type: none;
+    gap: 10px;
+    margin-left: 128px;
+}
+
+/* 导航菜单项样式 */
+.headli {
+    float: left;
+}
+
+/* 导航按钮样式 */
+.headbtn {
+    background-color: #BC8F8F;
+    color: white;
+    width: 110px;
+    height: 40px;
+    border: 0;
+    font-size: 25px;
+    box-sizing: content-box;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* 导航标题样式 */
+.headtitle {
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #8B4513;
+}
+
+.headtitle a {
+    color: #8B4513;
+    text-decoration: none;
+}
+
+/* 导航链接样式 */
+.headli a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.headli a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* 搜索框样式 */
+.searchbox {
+    position: absolute;
+    top: 45px;
+    right: 90px;
+    width: 240px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #E0D0BC;
+    padding: 5px;
+    display: inline;
+    outline: none;
+}
+
+/* 输入框样式 */
+.searchbox input {
+    width: 250px;
+    height: 30px;
+    border: 0;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* 背景图片位置 */
+.bgimg {
+    position: absolute;
+    top: 99px;
+    left: 0;
+}
+
+/* 主体内容样式 */
+.mainbody {
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #8B4513;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #8B4513;
+    opacity: 0.8;
+    color: white;
+}
+
+/* 主体标题样式 */
+.mainbody h1 {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 副标题样式 */
+.mainbody h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* 段落样式 */
+.mainbody p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 列表项样式 */
+.mainbody li {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* 文本对齐样式 */
+.text-justify {
+    text-align: justify;
+    font-size: 22px;
+}
+
+/* 动画列表样式 */
+.animelist {
+    margin-top: 0px;
+    list-style-type: none;
+    margin-left: 26px;
+    padding-left: 0;
+    margin-bottom: 20px;
+    display: inline-flex;
+}
+
+/* 动画列表项样式 */
+.animelist li {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #8B4513;
+    width: calc((100% - 20px) / 3);
+    padding-right: 25px;
+}
+
+/* 动画链接样式 */
+.animelist li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* 动画链接悬停样式 */
+.animelist li a:hover {
+    color: #BC8F8F;
+}
+
+/* 动画图片样式 */
+.animeimg {
+    width: 100%;
+    height: 213.62px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #8B4513;
+    object-fit: cover;
+}
+
+/* 动画信息激活链接样式 */
+.animeinfocontent a:active{
+    text:expression(target="_blank");
+}
+
+/* 动画信息样式 */
+.animeinfo {
+    font-size: 22px;
+}
+
+/* 动画主体样式 */
+.animebody {
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(139, 69, 19,0.97);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #8B4513;
+    color: white;
+}
+
+/* 动画标题样式 */
+#ani-sh-title {
+    text-align: center;
+    color: #EB6143;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* 动画显示样式 */
+#ani-sh {
+    color: #EB6143;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: left;
+}
+
+/* 动画底部样式 */
+#ani-sh-bottom {
+    text-align: center;
+    color: #EB6143;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* 动画主体内容布局 */
+#ani-sh-body {
+    opacity: 1;
+    display: flex;
+}
+
+/* 动画主体左侧样式 */
+#ani-sh-body-left {
+    width: 70%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* 动画主体左侧段落样式 */
+#ani-sh-body-left p {
+    font-size: 28px;
+}
+
+/* 动画主体左侧标题样式 */
+#ani-sh-body-left h1 {
+    font-size: 36px;
+}
+
+/* 动画主体右侧样式 */
+#ani-sh-body-right {
+    width: 40%;
+    background-color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #EB6143;
+}
+
+/* 动画主体右侧段落样式 */
+#ani-sh-body-right p {
+    text-align: left;
+    font-size: 20px;
+}
+
+/* 动画主体右侧小标题样式 */
+#ani-sh-body-right h3 {
+    text-align: left;
+    font-size: 32px;
+}
+
+/* 动画图片样式 */
+#ani-sh-img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* 时间轴容器 */
+.timeline {
+    position: fixed;
+    left: 20px;
+    top: 150px;
+    height: 100%;
+    border-left: 2px solid #8B4513;
+    padding: 0;
+    list-style: none;
+}
+
+/* 时间轴列表样式 */
+.timeline ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* 时间轴列表项样式 */
+.timeline li {
+    position: relative;
+    margin-left: -10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+/* 时间轴链接样式 */
+.timeline li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #8B4513;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* 时间轴链接悬停样式 */
+.timeline li a:hover {
+    background: #8B4513;
+    color: #fff;
+}
+
+/* 时间轴日期样式 */
+.timeline-date {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* 一般链接样式 */
+#gm-TJ-body a{
+    color: #ffce92;
+    text-decoration: none;
+}
+
+/* 一般标题样式 */
+#gm-TJ-body-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
