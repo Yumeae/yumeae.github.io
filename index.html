@@ -13,23 +13,21 @@
 	<!-- 头部 -->
 	<div class="header">
 		<!-- logo -->
-		<div class="headerlogo"><a href="index.html"><img src="favicon.ico" alt="logo" height="128" width="128"></a>
+		<div class="headerlogo"><a href="../index.html"><img src="favicon.ico" alt="logo" height="128" width="128"></a>
 		</div>
 		<!-- 标题 -->
-		<div class="headtitle" clickable="true"><a href="index.html">漫时记</a></div>
+		<div class="headtitle" clickable="true"><a href="../index.html">漫时记</a></div>
 		<ul class="headul"> <!-- 导航栏 -->
-			<li class="headli"><a class="headbtn" onclick="location.href='index.html'">首页</a></li>
-			<li class="headli"><a class="headbtn" onclick="location.href='CN/CN_anime.html'">优秀国创</a></li>
-			<li class="headli"><a class="headbtn" onclick="location.href='JP/JP_anime.html'">日本动漫</a></li>
-			<li class="headli"><a class="headbtn" onclick="location.href='US/US_anime.html'">欧美动漫</a></li>
-			<li class="headli"><a class="headbtn" onclick="location.href='KR/KR_anime.html'">韩国动漫</a></li>
+			<li class="headli"><a class="headbtn" onclick="location.href='../index.html'" style="background-color: #8B4513; color: white;">首页</a></li>
+			<li class="headli"><a class="headbtn" onclick="location.href='../CN/CN_anime.html'">优秀国创</a></li>
+			<li class="headli"><a class="headbtn" onclick="location.href='../JP/JP_anime.html'">日本动漫</a></li>
+			<li class="headli"><a class="headbtn" onclick="location.href='../US/US_anime.html'">欧美动漫</a></li>
 		</ul>
 		<!-- 搜索框 -->
-		<div class="searchbox">
-			<form action="search.php" method="get">
-				<input type="text" name="search" placeholder="输入后，enter键搜索">
-			</form>
-		</div>
+        <div class="searchbox">
+            <input type="text" id="searchInput" placeholder="在本页内搜索……" />
+            <button id="searchButton">搜索</button>
+        </div>
 	</div>
 	</div>
 	<!--首页主体-->
@@ -58,8 +56,14 @@
 					<li>增强跨文化交流：引入更多国际资源，举办跨国动漫文化论坛，搭建一个连接世界动漫爱好者的桥梁。</li>
 				</ul>
 			</ul>
-			<p>—————每一段时光中的热爱都值得被铭记，让动漫的光辉永远闪耀！—————</p>
+			<div class="bottom-line">
+    			<span class="line"></span>
+    			<span class="text">每一段时光中的热爱都值得被铭记，让动漫的光辉永远闪耀！</span>
+    			<span class="line"></span>
+			</div>
 		</div>
 	</div>
+	<script src="js/search.js"></script>
+	<script src="js/bgm-player.js"></script>
 </body>
 </html>

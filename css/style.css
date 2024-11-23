@@ -1,6 +1,4 @@
  
-/* 文件名: d:\Yumeu\ACG_museum\css\style.css */
-
 /* 设置页面主体的背景样式 */
 body {
     background: url(/img/bgimg.jpg) no-repeat center center fixed;
@@ -46,7 +44,7 @@ body {
 
 /* 导航菜单列表样式 */
 .headul {
-    left: 150px;
+    left: 245px;
     top: 25px;
     position: absolute;
     display: inline-block;
@@ -104,14 +102,14 @@ body {
 /* 搜索框样式 */
 .searchbox {
     position: absolute;
-    top: 45px;
-    right: 90px;
-    width: 240px;
+    top: 48px;
+    right: 30px;
+    width: 300px;
     height: 40px;
     border-radius: 5px;
     background-color: #E0D0BC;
     padding: 5px;
-    display: inline;
+    display: flex;
     outline: none;
 }
 
@@ -122,7 +120,22 @@ body {
     border: 0;
     padding: 5px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 5px 0px 0px 5px; 
+}
+.searchbox button{
+    background-color: #BC8F8F;
+    color: black;
+    width: 110px;
+    height: 40px;
+    border: 0;
+    font-size: 25px;
+    box-sizing: content-box;
+    border-radius: 0px 5px 5px 0px;
+    margin-right: 10px;
+}
+.searchbox button:hover{
+    background-color: #555;
+    color: white;
 }
 
 /* 背景图片位置 */
@@ -247,34 +260,34 @@ body {
     color: white;
 }
 
-/* 动画标题样式 */
+/* 上美影标题样式 */
 #ani-sh-title {
     text-align: center;
     color: #EB6143;
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* 动画显示样式 */
+/* 上美影显示样式 */
 #ani-sh {
     color: #EB6143;
     background-color: rgba(255, 255, 255, 0.6);
     text-align: left;
 }
 
-/* 动画底部样式 */
-#ani-sh-bottom {
+/* 上美影底部样式 */
+# {
     text-align: center;
     color: #EB6143;
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* 动画主体内容布局 */
+/* 上美影主体内容布局 */
 #ani-sh-body {
     opacity: 1;
     display: flex;
 }
 
-/* 动画主体左侧样式 */
+/* 上美影主体左侧样式 */
 #ani-sh-body-left {
     width: 70%;
     margin-left: 0px;
@@ -285,17 +298,17 @@ body {
     color: white;
 }
 
-/* 动画主体左侧段落样式 */
+/* 上美影主体左侧段落样式 */
 #ani-sh-body-left p {
     font-size: 28px;
 }
 
-/* 动画主体左侧标题样式 */
+/* 上美影主体左侧标题样式 */
 #ani-sh-body-left h1 {
     font-size: 36px;
 }
 
-/* 动画主体右侧样式 */
+/* 上美影主体右侧样式 */
 #ani-sh-body-right {
     width: 40%;
     background-color: white;
@@ -306,19 +319,19 @@ body {
     color: #EB6143;
 }
 
-/* 动画主体右侧段落样式 */
+/* 上美影主体右侧段落样式 */
 #ani-sh-body-right p {
     text-align: left;
     font-size: 20px;
 }
 
-/* 动画主体右侧小标题样式 */
+/* 上美影主体右侧小标题样式 */
 #ani-sh-body-right h3 {
     text-align: left;
     font-size: 32px;
 }
 
-/* 动画图片样式 */
+/* 上美影图片样式 */
 #ani-sh-img {
     width: 100%;
     border-radius: 5px;
@@ -386,4 +399,23 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
+}
+.bottom-line{
+    display:flex;
+    align-items:center;
+}
+.line{
+    border-top:1px solid #ffffff;
+    flex-grow:1;
+}
+.text{
+    margin:0 10px;
+}
+.ani-sh-line{
+    border-top:1px solid #eb6143;
+    flex-grow:1;
+}
+.highlight {
+    background-color: yellow; 
+    color: black;
 }
